@@ -34,11 +34,7 @@
                 </button>
     <div class="info-container">
      <div class="info">
-      <ul>
-       <li>
-	   Check out <a href="https://alm-confluence.systems.uk.hsbc/confluence/display/citateam/Cyber+Intelligence+and+Threat+Analysis" target="_blank" rel="noopener">CITA portal</a> and <a href="https://cyberhub.hsbc.com/collateral" target="_blank" rel="noopener">Cyberhub</a>
-       </li>
-      </ul>
+      Check out <a href="https://alm-confluence.systems.uk.hsbc/confluence/display/citateam/Cyber+Intelligence+and+Threat+Analysis" target="_blank" rel="noopener">CITA portal</a> and <a href="https://cyberhub.hsbc.com/collateral" target="_blank" rel="noopener">Cyberhub</a>
      </div>
     </div>
    </li>
@@ -51,8 +47,9 @@
     <div class="info-container">
      <div class="info">Here are some tips to keep your page weight under 2MB and 50 requests:
       <ul>
-       <li>
-	   Check out <a href="https://alm-confluence.systems.uk.hsbc/confluence/display/citateam/Cyber+Intelligence+and+Threat+Analysis" target="_blank" rel="noopener">CITA portal</a> and <a href="https://cyberhub.hsbc.com/collateral" target="_blank" rel="noopener">Cyberhub</a>
+       <li>Limit 3rd party libraries &amp; scripts</li>
+       <li>Load resources &amp; requests asynchronously</li>
+       <li>Consider a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a> for static assets &amp; pages
        </li>
       </ul>
      </div>
@@ -65,9 +62,11 @@
                 </button>
 
     <div class="info-container">
-       <li>
-	   Check out <a href="https://alm-confluence.systems.uk.hsbc/confluence/display/citateam/Cyber+Intelligence+and+Threat+Analysis" target="_blank" rel="noopener">CITA portal</a> and <a href="https://cyberhub.hsbc.com/collateral" target="_blank" rel="noopener">Cyberhub</a>
-       </li>
+     <div class="info">Many websites are loading full sets of font glyphs and weights they are not even using. Web fonts can also present inconsistent performance due to the reliance on third party servers for heavy font files. Try to limit your pages to 2-3 web fonts
+      or use a
+      <a target="_blank" rel="noopener" href="https://css-tricks.com/snippets/css/system-font-stack/">System
+                            Font Stack</a> for a comfortable look to the user.
+     </div>
     </div>
    </li>
    <li class="checklist-item">
@@ -250,40 +249,7 @@
      </div>
     </div>
    </li>
-   <li class="checklist-item">
-    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item__title">Sanitized &amp; Limited User Input/Parameters</span>
-    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                    <span class="line"></span>
-                </button>
 
-    <div class="info-container">
-     <div class="info">When parsing input, remember to sanitize for data://, javascript://, and CRLF characters. Never directly inject user content into responses or <a target="_blank" rel="noopener" href="http://bobby-tables.com/">SQL
-                            statements</a>.
-     </div>
-    </div>
-   </li>
-   <li class="checklist-item">
-    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item__title">Password Hashes Stored in scrypt or bcrypt</span>
-    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                    <span class="line"></span>
-                </button>
-
-    <div class="info-container">
-     <div class="info">bcrypt is much older than scrypt and has received more analysis and implementations but many suggest that scrypt is faster and stronger.
-     </div>
-    </div>
-   </li>
-   <li class="checklist-item">
-    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item__title">Rate Limited Slower API paths</span>
-    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                    <span class="line"></span>
-                </button>
-
-    <div class="info-container">
-     <div class="info">In order to protect yourself from Denial-of-Service attacks, implement a rate limiter on API paths such as login or token generation.
-     </div>
-    </div>
-   </li>
   </ul>
  </section>
  <section class="checklist">
