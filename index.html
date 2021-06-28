@@ -7,15 +7,22 @@
           href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
+<script src="certificate_generator/filesaver.js"></script>
+<script src="certificate_generator/index.js"></script>
+
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <header>
- <h1 class="title"><a href="https://codepen.io/oxla/pen/awmMYY?editors=1010">Work From Home Security Checklist</a></h1>
+ <h1 class="title">Work From Home Security Checklist</h1>
  <div class="progress">
   <span class="progress__count">0/X</span>
   <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+  <input class="progress__reset" type="reset" value="Get Certificate" title="Submit" tabindex="0">
+  <input type="text" name="Name" class="question" id="name" required autocomplete="off" />
+  <label for="name"><span>What's your name?</span></label>
+  <input type="submit" id="submitBtn" value="Get Certificate"/>
   <span class="progress__border"></span>
   <span class="progress__bar"></span>
  </div>
